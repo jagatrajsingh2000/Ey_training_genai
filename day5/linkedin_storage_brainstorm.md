@@ -48,13 +48,6 @@ For this type of website, we need a place to store files uploaded by users. Thes
 
 Files like photos and resumes can become large. If we store them inside the database, the database can become slow and difficult to manage. Cloud storage is better because it is made for storing files.
 
-For example:
-
-- Profile photos can be loaded from cloud storage.
-- Resumes can be stored safely and accessed only when needed.
-- Post images can be shown in the user feed.
-- Company logos can be displayed on company pages.
-
 ## Option 1: Amazon S3
 
 Amazon S3 is a storage service from AWS. It is used to store files such as images, documents, videos, and backups.
