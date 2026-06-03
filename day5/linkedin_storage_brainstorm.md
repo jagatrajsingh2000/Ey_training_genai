@@ -91,15 +91,3 @@ Also it has better CDN network which will be faster compare to Azure blob storag
 
 Azure Blob Storage is also a good service, but I would choose it mainly if the whole project was already using Microsoft Azure. Since this is a learning project and we want something easy to explain and implement, Amazon S3 is the better choice.
 
-## Public and Private Files
-
-Some files can be public because everyone should see them. Some files should be private because they contain personal information.
-
-| File | Access |
-|---|---|
-| Profile photo | Public |
-| Banner image | Public |
-| Post image | Public |
-| Company logo | Public |
-| Resume | Private |
-| Certificate | Private or restricted |
