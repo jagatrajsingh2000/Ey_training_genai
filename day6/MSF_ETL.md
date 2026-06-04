@@ -4,8 +4,6 @@
 
 Médecins Sans Frontières (MSF) runs humanitarian medical operations in 70+ countries. They want to build a unified data platform that collects field clinic data from around 400 field sites into a central analytics hub for the Geneva headquarters team.
 
-Based on the key constraints, I would choose **ETL before loading into BigQuery**, then optionally use **ELT inside BigQuery for analytics**.
-
 ## Final Choice: ETL
 
 | Constraint | What it means | ETL or ELT? |
@@ -16,7 +14,7 @@ Based on the key constraints, I would choose **ETL before loading into BigQuery*
 | **Data format** | 400 sites have different column names, date formats, and local labels | ETL is needed for normalization before loading |
 | **Latency tolerance** | 24-hour delay is acceptable, forecasting is weekly | ETL batch pipeline is fine |
 
-## Best Answer
+## Answer
 
 I would use **ETL**, because sensitive patient data must be anonymized and normalized before it reaches the central BigQuery platform.
 
