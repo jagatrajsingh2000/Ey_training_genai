@@ -1,4 +1,4 @@
-# Pythonm_training_ey_genAI
+# eytraining
 
 Training files and resources for EY GenAI.
 
