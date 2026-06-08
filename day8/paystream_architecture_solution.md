@@ -1,14 +1,11 @@
 # PayStream Architecture Solution
 
 ## Problem Statement
+SCENARIO BACKGROUND
 
-PayStream is a payment platform that receives payment requests from merchants, processes settlements, checks fraud risk, sends notifications, updates analytics, and runs end-of-day reconciliation jobs.
+PayStream is a B2B payment processor handling 4 million transactions per day for 600 merchant clients. Their platform must guarantee every payment is settled exactly once, notify downstream systems about account activity, and produce a real-time fraud risk score before authorisation completes.
 
-The main design question is:
-
-> When should the system use a **Queue**, and when should it use an **Event Bus**?
-
-This is important because payment systems need reliability, retries, load balancing, and independent service communication. Some tasks must be handled by only one worker, while some events must be broadcast to many services.
+The engineering team is designing the messaging layer. They need to choose the right pattern for each integration below.
 
 ## Complete Architecture Diagram
 
